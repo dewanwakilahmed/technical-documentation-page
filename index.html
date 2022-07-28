@@ -171,8 +171,8 @@
         <article>
           To get started with writing JavaScript, open the Scratchpad and write
           your first "Hello world" JavaScript code:
-          <code>
-            function greetMe(yourName) { alert("Hello " + yourName); }
+          <code
+            >function greetMe(yourName) { alert("Hello " + yourName); }
             greetMe("World");
           </code>
 
@@ -252,10 +252,10 @@
             ECMAScript 2015.
           </p>
 
-          <code>
-            if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
-            defined</code
-          >
+          <code
+            >if (true) { let y = 5; } console.log(y); // ReferenceError: y is
+            not defined
+          </code>
         </article>
       </section>
 
@@ -307,15 +307,15 @@
             variable in the same scope. For example:
           </p>
 
-          <code>
-            // THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
+          <code
+            >// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
             WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
             //statements }
           </code>
           However, object attributes are not protected, so the following
           statement is executed without problems.
-          <code>
-            const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";
+          <code
+            >const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";
           </code>
         </article>
       </section>
@@ -375,8 +375,8 @@
             You may also compound the statements using else if to have multiple
             conditions tested in sequence, as follows:
           </p>
-          <code>
-            if (condition_1) { statement_1; } else if (condition_2) {
+          <code
+            >if (condition_1) { statement_1; } else if (condition_2) {
             statement_2; } else if (condition_n) { statement_n; } else {
             statement_last; }
           </code>
@@ -386,8 +386,8 @@
           general, it's good practice to always use block statements, especially
           when nesting if statements:
 
-          <code>
-            if (condition) { statement_1_runs_if_condition_is_true;
+          <code
+            >if (condition) { statement_1_runs_if_condition_is_true;
             statement_2_runs_if_condition_is_true; } else {
             statement_3_runs_if_condition_is_false;
             statement_4_runs_if_condition_is_false; }
